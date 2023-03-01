@@ -10,7 +10,7 @@ octavia_1 = Auto("Škoda", "Octavia", "Kombi", 103, "Nafta", 605, 59000, 2020, 4
 vw_golf = Auto("Volkswagen", "Golf GTI", "Hatchback", 145, "Benzin", 370, 77000, 2014, 515000)
 fabia_1 = Auto("Škoda", "Fabia", "Hatchback", 51, "Benzin", 370, 115000, 2014, 129700)
 topovka_car_list = [bmw, fiat, brabus, octavia_1, vw_golf, fabia_1]
-for gen_car in range(100):
+for gen_car in range(200):
     brand = choice(list(brand_model_dict.keys()))
     model = choice(brand_model_dict[brand])
     chassis = choice(["Kombi", "Hatchback", "Sedan", "Off-Road", "Liftback"])
@@ -32,6 +32,6 @@ for gen_car in range(100):
     topovka_car_list.append(gen_car)
 
 
-for car in topovka_car_list:
-    print(car)
-print(len(topovka_car_list))
+#for car in topovka_car_list:
+    #print(car)
+#print(len(topovka_car_list))
